@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7459A3981824611B00B4CB7C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7459A3971824611B00B4CB7C /* Cocoa.framework */; };
+		7459A39A1824611B00B4CB7C /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7459A3991824611B00B4CB7C /* Quartz.framework */; };
+		7459A3A41824611B00B4CB7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7459A3A21824611B00B4CB7C /* InfoPlist.strings */; };
+		7459A3A71824611B00B4CB7C /* hOz_Leap_MotionPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 7459A3A61824611B00B4CB7C /* hOz_Leap_MotionPlugIn.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7459A3941824611B00B4CB7C /* hOz Leap Motion.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hOz Leap Motion.plugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7459A3971824611B00B4CB7C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7459A3991824611B00B4CB7C /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		7459A39C1824611B00B4CB7C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7459A39D1824611B00B4CB7C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7459A39E1824611B00B4CB7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7459A3A11824611B00B4CB7C /* hOz Leap Motion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hOz Leap Motion-Info.plist"; sourceTree = "<group>"; };
+		7459A3A31824611B00B4CB7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7459A3A51824611B00B4CB7C /* hOz_Leap_MotionPlugIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hOz_Leap_MotionPlugIn.h; sourceTree = "<group>"; };
+		7459A3A61824611B00B4CB7C /* hOz_Leap_MotionPlugIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hOz_Leap_MotionPlugIn.m; sourceTree = "<group>"; };
+		7459A3A81824611B00B4CB7C /* hOz Leap Motion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hOz Leap Motion-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7459A3901824611B00B4CB7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7459A3981824611B00B4CB7C /* Cocoa.framework in Frameworks */,
+				7459A39A1824611B00B4CB7C /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7459A38A1824611B00B4CB7C = {
+			isa = PBXGroup;
+			children = (
+				7459A39F1824611B00B4CB7C /* hOz Leap Motion */,
+				7459A3961824611B00B4CB7C /* Frameworks */,
+				7459A3951824611B00B4CB7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7459A3951824611B00B4CB7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7459A3941824611B00B4CB7C /* hOz Leap Motion.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7459A3961824611B00B4CB7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7459A3971824611B00B4CB7C /* Cocoa.framework */,
+				7459A3991824611B00B4CB7C /* Quartz.framework */,
+				7459A39B1824611B00B4CB7C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7459A39B1824611B00B4CB7C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7459A39C1824611B00B4CB7C /* AppKit.framework */,
+				7459A39D1824611B00B4CB7C /* CoreData.framework */,
+				7459A39E1824611B00B4CB7C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7459A39F1824611B00B4CB7C /* hOz Leap Motion */ = {
+			isa = PBXGroup;
+			children = (
+				7459A3A51824611B00B4CB7C /* hOz_Leap_MotionPlugIn.h */,
+				7459A3A61824611B00B4CB7C /* hOz_Leap_MotionPlugIn.m */,
+				7459A3A01824611B00B4CB7C /* Supporting Files */,
+			);
+			path = "hOz Leap Motion";
+			sourceTree = "<group>";
+		};
+		7459A3A01824611B00B4CB7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7459A3A11824611B00B4CB7C /* hOz Leap Motion-Info.plist */,
+				7459A3A21824611B00B4CB7C /* InfoPlist.strings */,
+				7459A3A81824611B00B4CB7C /* hOz Leap Motion-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7459A3931824611B00B4CB7C /* hOz Leap Motion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7459A3AB1824611B00B4CB7C /* Build configuration list for PBXNativeTarget "hOz Leap Motion" */;
+			buildPhases = (
+				7459A38F1824611B00B4CB7C /* Sources */,
+				7459A3901824611B00B4CB7C /* Frameworks */,
+				7459A3911824611B00B4CB7C /* Resources */,
+				7459A3921824611B00B4CB7C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hOz Leap Motion";
+			productName = "hOz Leap Motion";
+			productReference = 7459A3941824611B00B4CB7C /* hOz Leap Motion.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7459A38B1824611B00B4CB7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "h[Oz]";
+			};
+			buildConfigurationList = 7459A38E1824611B00B4CB7C /* Build configuration list for PBXProject "hOz Leap Motion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7459A38A1824611B00B4CB7C;
+			productRefGroup = 7459A3951824611B00B4CB7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7459A3931824611B00B4CB7C /* hOz Leap Motion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7459A3911824611B00B4CB7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7459A3A41824611B00B4CB7C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7459A3921824611B00B4CB7C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies the built plug-in to \"~/Library/Graphics/Quartz Composer Plug-Ins\" and overrides any previous version at that location\n\nmkdir -p \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins\"\nrm -rf \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins/hOz Leap Motion.plugin\"\ncp -rf \"$BUILT_PRODUCTS_DIR/hOz Leap Motion.plugin\" \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7459A38F1824611B00B4CB7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7459A3A71824611B00B4CB7C /* hOz_Leap_MotionPlugIn.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7459A3A21824611B00B4CB7C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7459A3A31824611B00B4CB7C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7459A3A91824611B00B4CB7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7459A3AA1824611B00B4CB7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7459A3AC1824611B00B4CB7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hOz Leap Motion/hOz Leap Motion-Prefix.pch";
+				INFOPLIST_FILE = "hOz Leap Motion/hOz Leap Motion-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		7459A3AD1824611B00B4CB7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hOz Leap Motion/hOz Leap Motion-Prefix.pch";
+				INFOPLIST_FILE = "hOz Leap Motion/hOz Leap Motion-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7459A38E1824611B00B4CB7C /* Build configuration list for PBXProject "hOz Leap Motion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7459A3A91824611B00B4CB7C /* Debug */,
+				7459A3AA1824611B00B4CB7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7459A3AB1824611B00B4CB7C /* Build configuration list for PBXNativeTarget "hOz Leap Motion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7459A3AC1824611B00B4CB7C /* Debug */,
+				7459A3AD1824611B00B4CB7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7459A38B1824611B00B4CB7C /* Project object */;
+}
