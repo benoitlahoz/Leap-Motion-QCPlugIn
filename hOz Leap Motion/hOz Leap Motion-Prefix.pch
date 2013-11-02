@@ -1,6 +1,11 @@
 //
-// Prefix header for all source files of the 'hOz Leap Motion' target in the 'hOz Leap Motion' project
+// Prefix header for all source files of the 'h[Oz] Leap Motion' target in the 'h[Oz] Leap Motion' project
 //
 
 #ifdef __OBJC__
 #endif
+
+#import <Quartz/Quartz.h>
+
+#import "Leap.h"
+#import "hOzLeap.h"

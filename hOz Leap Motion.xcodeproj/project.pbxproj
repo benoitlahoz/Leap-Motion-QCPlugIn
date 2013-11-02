@@ -10,8 +10,29 @@
 		7459A3981824611B00B4CB7C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7459A3971824611B00B4CB7C /* Cocoa.framework */; };
 		7459A39A1824611B00B4CB7C /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7459A3991824611B00B4CB7C /* Quartz.framework */; };
 		7459A3A41824611B00B4CB7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7459A3A21824611B00B4CB7C /* InfoPlist.strings */; };
-		7459A3A71824611B00B4CB7C /* hOz_Leap_MotionPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 7459A3A61824611B00B4CB7C /* hOz_Leap_MotionPlugIn.m */; };
+		7459A3B41824618600B4CB7C /* hOzLeap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7459A3B31824618600B4CB7C /* hOzLeap.mm */; };
+		7459A3C31824619700B4CB7C /* hOzLeap3DTransformationPlugIn.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7459A3B61824619700B4CB7C /* hOzLeap3DTransformationPlugIn.mm */; };
+		7459A3C41824619700B4CB7C /* hOzLeapDevicePlugIn.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7459A3B81824619700B4CB7C /* hOzLeapDevicePlugIn.mm */; };
+		7459A3C51824619700B4CB7C /* hOzLeapHandReaderPlugIn.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7459A3BA1824619700B4CB7C /* hOzLeapHandReaderPlugIn.mm */; };
+		7459A3C61824619700B4CB7C /* hOzLeapPointableReaderPlugIn.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7459A3BC1824619700B4CB7C /* hOzLeapPointableReaderPlugIn.mm */; };
+		7459A3C71824619700B4CB7C /* hOzLeapPointableReaderPlugIn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7459A3BD1824619700B4CB7C /* hOzLeapPointableReaderPlugIn.xib */; };
+		7459A3C81824619700B4CB7C /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7459A3C21824619700B4CB7C /* LeapObjectiveC.mm */; };
+		7459A3CA182461AE00B4CB7C /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7459A3C9182461AE00B4CB7C /* libLeap.dylib */; };
+		7459A3CC182461C500B4CB7C /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7459A3C9182461AE00B4CB7C /* libLeap.dylib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7459A3CB182461BD00B4CB7C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				7459A3CC182461C500B4CB7C /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7459A3941824611B00B4CB7C /* hOz Leap Motion.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hOz Leap Motion.plugin"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,11 +41,25 @@
 		7459A39C1824611B00B4CB7C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		7459A39D1824611B00B4CB7C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7459A39E1824611B00B4CB7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7459A3A11824611B00B4CB7C /* hOz Leap Motion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hOz Leap Motion-Info.plist"; sourceTree = "<group>"; };
 		7459A3A31824611B00B4CB7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7459A3A51824611B00B4CB7C /* hOz_Leap_MotionPlugIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hOz_Leap_MotionPlugIn.h; sourceTree = "<group>"; };
-		7459A3A61824611B00B4CB7C /* hOz_Leap_MotionPlugIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hOz_Leap_MotionPlugIn.m; sourceTree = "<group>"; };
-		7459A3A81824611B00B4CB7C /* hOz Leap Motion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hOz Leap Motion-Prefix.pch"; sourceTree = "<group>"; };
+		7459A3B21824618600B4CB7C /* hOzLeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hOzLeap.h; sourceTree = "<group>"; };
+		7459A3B31824618600B4CB7C /* hOzLeap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = hOzLeap.mm; sourceTree = "<group>"; };
+		7459A3B51824619700B4CB7C /* hOzLeap3DTransformationPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hOzLeap3DTransformationPlugIn.h; sourceTree = "<group>"; };
+		7459A3B61824619700B4CB7C /* hOzLeap3DTransformationPlugIn.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = hOzLeap3DTransformationPlugIn.mm; sourceTree = "<group>"; };
+		7459A3B71824619700B4CB7C /* hOzLeapDevicePlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hOzLeapDevicePlugIn.h; sourceTree = "<group>"; };
+		7459A3B81824619700B4CB7C /* hOzLeapDevicePlugIn.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = hOzLeapDevicePlugIn.mm; sourceTree = "<group>"; };
+		7459A3B91824619700B4CB7C /* hOzLeapHandReaderPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hOzLeapHandReaderPlugIn.h; sourceTree = "<group>"; };
+		7459A3BA1824619700B4CB7C /* hOzLeapHandReaderPlugIn.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = hOzLeapHandReaderPlugIn.mm; sourceTree = "<group>"; };
+		7459A3BB1824619700B4CB7C /* hOzLeapPointableReaderPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hOzLeapPointableReaderPlugIn.h; sourceTree = "<group>"; };
+		7459A3BC1824619700B4CB7C /* hOzLeapPointableReaderPlugIn.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = hOzLeapPointableReaderPlugIn.mm; sourceTree = "<group>"; };
+		7459A3BD1824619700B4CB7C /* hOzLeapPointableReaderPlugIn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = hOzLeapPointableReaderPlugIn.xib; sourceTree = "<group>"; };
+		7459A3BF1824619700B4CB7C /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		7459A3C01824619700B4CB7C /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		7459A3C11824619700B4CB7C /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
+		7459A3C21824619700B4CB7C /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
+		7459A3C9182461AE00B4CB7C /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = "hOz Leap Motion/libLeap.dylib"; sourceTree = "<group>"; };
+		7459A3CD1824622A00B4CB7C /* hOz Leap Motion-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "hOz Leap Motion-Info.plist"; sourceTree = "<group>"; };
+		7459A3CE1824622A00B4CB7C /* hOz Leap Motion-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hOz Leap Motion-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +69,7 @@
 			files = (
 				7459A3981824611B00B4CB7C /* Cocoa.framework in Frameworks */,
 				7459A39A1824611B00B4CB7C /* Quartz.framework in Frameworks */,
+				7459A3CA182461AE00B4CB7C /* libLeap.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +106,7 @@
 		7459A39B1824611B00B4CB7C /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7459A3C9182461AE00B4CB7C /* libLeap.dylib */,
 				7459A39C1824611B00B4CB7C /* AppKit.framework */,
 				7459A39D1824611B00B4CB7C /* CoreData.framework */,
 				7459A39E1824611B00B4CB7C /* Foundation.framework */,
@@ -80,8 +117,17 @@
 		7459A39F1824611B00B4CB7C /* hOz Leap Motion */ = {
 			isa = PBXGroup;
 			children = (
-				7459A3A51824611B00B4CB7C /* hOz_Leap_MotionPlugIn.h */,
-				7459A3A61824611B00B4CB7C /* hOz_Leap_MotionPlugIn.m */,
+				7459A3B11824618600B4CB7C /* hOzLeap */,
+				7459A3B51824619700B4CB7C /* hOzLeap3DTransformationPlugIn.h */,
+				7459A3B61824619700B4CB7C /* hOzLeap3DTransformationPlugIn.mm */,
+				7459A3B71824619700B4CB7C /* hOzLeapDevicePlugIn.h */,
+				7459A3B81824619700B4CB7C /* hOzLeapDevicePlugIn.mm */,
+				7459A3B91824619700B4CB7C /* hOzLeapHandReaderPlugIn.h */,
+				7459A3BA1824619700B4CB7C /* hOzLeapHandReaderPlugIn.mm */,
+				7459A3BB1824619700B4CB7C /* hOzLeapPointableReaderPlugIn.h */,
+				7459A3BC1824619700B4CB7C /* hOzLeapPointableReaderPlugIn.mm */,
+				7459A3BD1824619700B4CB7C /* hOzLeapPointableReaderPlugIn.xib */,
+				7459A3BE1824619700B4CB7C /* Leap Files */,
 				7459A3A01824611B00B4CB7C /* Supporting Files */,
 			);
 			path = "hOz Leap Motion";
@@ -90,11 +136,31 @@
 		7459A3A01824611B00B4CB7C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7459A3A11824611B00B4CB7C /* hOz Leap Motion-Info.plist */,
+				7459A3CD1824622A00B4CB7C /* hOz Leap Motion-Info.plist */,
+				7459A3CE1824622A00B4CB7C /* hOz Leap Motion-Prefix.pch */,
 				7459A3A21824611B00B4CB7C /* InfoPlist.strings */,
-				7459A3A81824611B00B4CB7C /* hOz Leap Motion-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7459A3B11824618600B4CB7C /* hOzLeap */ = {
+			isa = PBXGroup;
+			children = (
+				7459A3B21824618600B4CB7C /* hOzLeap.h */,
+				7459A3B31824618600B4CB7C /* hOzLeap.mm */,
+			);
+			path = hOzLeap;
+			sourceTree = "<group>";
+		};
+		7459A3BE1824619700B4CB7C /* Leap Files */ = {
+			isa = PBXGroup;
+			children = (
+				7459A3BF1824619700B4CB7C /* Leap.h */,
+				7459A3C01824619700B4CB7C /* LeapMath.h */,
+				7459A3C11824619700B4CB7C /* LeapObjectiveC.h */,
+				7459A3C21824619700B4CB7C /* LeapObjectiveC.mm */,
+			);
+			path = "Leap Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +172,7 @@
 			buildPhases = (
 				7459A38F1824611B00B4CB7C /* Sources */,
 				7459A3901824611B00B4CB7C /* Frameworks */,
+				7459A3CB182461BD00B4CB7C /* CopyFiles */,
 				7459A3911824611B00B4CB7C /* Resources */,
 				7459A3921824611B00B4CB7C /* ShellScript */,
 			);
@@ -150,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7459A3A41824611B00B4CB7C /* InfoPlist.strings in Resources */,
+				7459A3C71824619700B4CB7C /* hOzLeapPointableReaderPlugIn.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7459A3A71824611B00B4CB7C /* hOz_Leap_MotionPlugIn.m in Sources */,
+				7459A3B41824618600B4CB7C /* hOzLeap.mm in Sources */,
+				7459A3C31824619700B4CB7C /* hOzLeap3DTransformationPlugIn.mm in Sources */,
+				7459A3C41824619700B4CB7C /* hOzLeapDevicePlugIn.mm in Sources */,
+				7459A3C51824619700B4CB7C /* hOzLeapHandReaderPlugIn.mm in Sources */,
+				7459A3C61824619700B4CB7C /* hOzLeapPointableReaderPlugIn.mm in Sources */,
+				7459A3C81824619700B4CB7C /* LeapObjectiveC.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -220,9 +293,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -230,7 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -238,7 +311,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -246,8 +319,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};
@@ -260,6 +333,10 @@
 				GCC_PREFIX_HEADER = "hOz Leap Motion/hOz Leap Motion-Prefix.pch";
 				INFOPLIST_FILE = "hOz Leap Motion/hOz Leap Motion-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/hOz Leap Motion\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = plugin;
 			};
@@ -274,6 +351,10 @@
 				GCC_PREFIX_HEADER = "hOz Leap Motion/hOz Leap Motion-Prefix.pch";
 				INFOPLIST_FILE = "hOz Leap Motion/hOz Leap Motion-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/hOz Leap Motion\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = plugin;
 			};
@@ -298,6 +379,7 @@
 				7459A3AD1824611B00B4CB7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
