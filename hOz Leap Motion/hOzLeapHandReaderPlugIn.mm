@@ -190,6 +190,8 @@
         
         self.outputFingers = [hand objectForKey:@"pointables"];
         
+    } else {
+        self.outputIsHand = NO;
     }
 
     
