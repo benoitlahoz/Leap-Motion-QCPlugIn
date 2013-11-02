@@ -10,7 +10,6 @@ A set of 4 patches to get the data out of the Leap Motion device.
 NB : the 3D Transformation patch doesn't work on direction and normals for the moment (TODO list).
 
 Copyright 2013 - hOz for L'ange Carasuelo | Mélange Karburant 3 
-
 www.benoitlahoz.net | www.carasuelo.org | www.melangekarburant3.org
 
 3D Transformation patch, many bugs correction and new features were commissioned 
