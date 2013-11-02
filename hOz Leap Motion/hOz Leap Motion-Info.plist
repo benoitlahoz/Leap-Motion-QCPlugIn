@@ -15,14 +15,17 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>0.03</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>0.03</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2013 h[Oz]. All rights reserved.</string>
 	<key>QCPlugInClasses</key>
 	<array>
-		<string>hOz_Leap_MotionPlugIn</string>
+		<string>hOzLeapDevicePlugIn</string>
+		<string>hOzLeapHandReaderPlugIn</string>
+		<string>hOzLeapPointableReaderPlugIn</string>
+		<string>hOzLeap3DTransformationPlugIn</string>
 	</array>
 </dict>
 </plist>
