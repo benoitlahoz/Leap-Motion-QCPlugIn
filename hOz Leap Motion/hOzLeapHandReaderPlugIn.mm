@@ -12,7 +12,7 @@
 #import "hOzLeapHandReaderPlugIn.h"
 
 
-#define	kQCPlugIn_Name				@"h[Oz].leap Hand Reader (do not distribute)"
+#define	kQCPlugIn_Name				@"h[Oz].leap Hand Reader"
 #define	kQCPlugIn_Description		@"h[Oz] Leap Motion v.0.03\n\nA \"helper\" patch that organize the data from a Hands Device-Plug-In output, avoiding the use of a lot of structures reader.\n\nCopyright 2013 - h[Oz]\nBenoît Lahoz www.benoitlahoz.net\nfor L'ange Carasuelo | Mélange Karburant 3\nhttp://www.carasuelo.org | http://www.melangekarburant3.org\n\nCreative Commons Share Alike Attribution 3.0 (Commercial)\nhttp://www.creativecommons.org\n\nThe 0.3 version bugs correction and new outputs were commissioned by Jonathan Hammond (Just Add Music Media, www.justaddmusicmedia.com)"
 
 @implementation hOzLeapHandReaderPlugIn
