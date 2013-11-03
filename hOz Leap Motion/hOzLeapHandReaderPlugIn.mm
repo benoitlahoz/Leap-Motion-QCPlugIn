@@ -162,7 +162,6 @@
     
     
     if ([self.inputHands count] > self.inputHandIndex) {
-
         
         NSDictionary *hand = [self.inputHands objectForKey:[[self.inputHands allKeys] objectAtIndex:self.inputHandIndex]];
         
@@ -191,7 +190,30 @@
         self.outputFingers = [hand objectForKey:@"pointables"];
         
     } else {
+
         self.outputIsHand = NO;
+        
+        self.outputIsRightMost = NO;
+        self.outputIsLeftMost = NO;
+        self.outputIsFrontMost = NO;
+        
+        self.outputPalmPos = nil;
+        self.outputStabilizedPalmPos = nil;
+        self.outputHandPalmVelocity = nil;
+        
+        self.outputHandPitch = nil;
+        self.outputHandRoll = nil;
+        self.outputHandYaw = nil;
+        
+        self.outputHandDir = nil;
+        
+        self.outputHandPalmNormal = nil;
+        
+        self.outputHandSphereCenter = nil;
+        
+        self.outputHandSphereRadius = nil;
+        
+        self.outputFingers = nil;
     }
 
     
