@@ -13,6 +13,6 @@ Copyright 2013 - hOz for L'ange Carasuelo | Mélange Karburant 3
 www.benoitlahoz.net | www.carasuelo.org | www.melangekarburant3.org
 
 3D Transformation patch, many bugs correction and new features were commissioned 
-by Jonathan Hammond (Just Add mUsic Media) www.justaddmusicmedia.com
+by Jonathan Hammond (Just Add Music Media) www.justaddmusicmedia.com
 
 MultiHandFingers.qtz and VelocityPainting.qtz are example patches provided by J.Hammond.
