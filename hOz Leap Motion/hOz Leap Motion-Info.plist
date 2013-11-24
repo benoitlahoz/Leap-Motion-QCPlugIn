@@ -15,9 +15,9 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.03</string>
+	<string>0.032</string>
 	<key>CFBundleVersion</key>
-	<string>0.03</string>
+	<string>0.032</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2013 h[Oz]. All rights reserved.</string>
 	<key>QCPlugInClasses</key>

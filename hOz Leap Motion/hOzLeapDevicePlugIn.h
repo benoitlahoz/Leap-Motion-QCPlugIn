@@ -47,6 +47,12 @@
 @property double                inputMaxZ;
 
 /** 
+ *
+ * Enable / diable the background applications mode
+ */
+@property BOOL                  inputBackgroundApp;
+
+/** 
  * Let the user choose the screen (didn't really understand the real use of this, but the controller needs it to find the interaction box)
  */
 @property NSUInteger            inputScreen;
@@ -54,6 +60,7 @@
 
 /** 
  * outputConnected              Output YES if the controller is connected, NO otherwise
+ * outputBackgroundApp          Output YES if background applications are allowed, NO otherwise
  * outputScreen                 Output the interaction box bounds coordinates                                           ---> BUG, TODO : change the if condition
  * outputFrame                  Output the current frame number
  * outputHands                  Output a NSDictionary (keyed structure) that contains all the data from the Hands
@@ -64,6 +71,7 @@
  * outputGesture                Outputs a NSDictionary with current gestures, organized by gesture ID
  */
 @property BOOL                  outputConnected;
+@property BOOL                  outputBackgroundApp;
 @property (assign) NSDictionary *outputScreen;
 @property (assign) NSDictionary *outputFrame;
 @property (assign) NSDictionary *outputHands;

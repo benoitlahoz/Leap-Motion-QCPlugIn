@@ -12,8 +12,10 @@
 
 @dynamic inputMinZ;
 @dynamic inputMaxZ;
+@dynamic inputBackgroundApp;
 @dynamic inputScreen;
 
+@dynamic outputBackgroundApp;
 @dynamic outputHands;
 @dynamic outputFingers;
 @dynamic outputFrame;
@@ -41,6 +43,9 @@
     if([key isEqualToString:@"inputScreen"])
         return [NSDictionary dictionaryWithObjectsAndKeys:@"Screen", QCPortAttributeNameKey, nil];
     
+    if([key isEqualToString:@"inputBackgroundApp"])
+        return [NSDictionary dictionaryWithObjectsAndKeys:@"Allow Background", QCPortAttributeNameKey, nil];
+    
     if([key isEqualToString:@"outputGesture"])
         return [NSDictionary dictionaryWithObjectsAndKeys:@"Gesture", QCPortAttributeNameKey, nil];
     
@@ -64,6 +69,9 @@
     
     if([key isEqualToString:@"outputScreen"])
         return [NSDictionary dictionaryWithObjectsAndKeys:@"Interaction Box", QCPortAttributeNameKey, nil];
+    
+    if([key isEqualToString:@"outputBackgroundApp"])
+        return [NSDictionary dictionaryWithObjectsAndKeys:@"Background Allowed", QCPortAttributeNameKey, nil];
     
     
     
@@ -113,6 +121,8 @@
     [aLeapController enableGesture:LEAP_GESTURE_TYPE_SCREEN_TAP enable:YES];
     [aLeapController enableGesture:LEAP_GESTURE_TYPE_SWIPE enable:YES];
     
+    [aLeapController setPolicyFlags:LEAP_POLICY_DEFAULT];
+    
     gestures = [[NSMutableDictionary alloc] init];
     
     screenCoordinates = [[NSDictionary alloc] init];
@@ -124,6 +134,17 @@
 
 - (BOOL)execute:(id <QCPlugInContext>)context atTime:(NSTimeInterval)time withArguments:(NSDictionary *)arguments
 {
+    
+    if ([self didValueForInputKeyChange:@"inputBackgroundApp"]) {
+        if (self.inputBackgroundApp == YES) {
+            [aLeapController setPolicyFlags:LEAP_POLICY_BACKGROUND_FRAMES];
+        } else {
+            // ---- Doesn't work when the policy has been set once to LEAP_POLICY_BACKGROUND_FRAMES
+            //      TODO : check the "asynchronous" problem
+            //
+            [aLeapController setPolicyFlags:LEAP_POLICY_DEFAULT];
+        }
+    }
     
     self.outputConnected = [aLeapController isConnected];
     
@@ -308,6 +329,8 @@
     
     }
 
+    
+    self.outputBackgroundApp = [aLeapController policyFlags];
 
 
 	return YES;
